@@ -4,7 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Memes slider task</title>
   </head>
-  <body></body>
+  <body>
+    <div id="slider-container">
+      <input type="radio" name="slider-input" id="slide_1" checked />
+      <input type="radio" name="slider-input" id="slide_2" />
+      <input type="radio" name="slider-input" id="slide_3" />
+      <input type="radio" name="slider-input" id="slide_4" />
+      <div id="slides-memes">
+        <div id="content-wrapper">
+          <div class="content-block">
+            <div class="slide slide_1">
+              <div class="slide-content">
+                <div class="slide-image image-1"></div>
+                <h2 class="slide-text">Slide 1</h2>
+              </div>
+            </div>
+            <div class="slide slide_2">
+              <div class="slide-content">
+                <div class="slide-image image-2"></div>
+                <h2 class="slide-text">Slide 2</h2>
+              </div>
+            </div>
+            <div class="slide slide_3">
+              <div class="slide-content">
+                <div class="slide-image"></div>
+                <h2 class="slide-text">Slide 3</h2>
+              </div>
+            </div>
+            <div class="slide slide_4">
+              <div class="slide-content">
+                <div class="slide-image"></div>
+                <h2 class="slide-text">Slide 4</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="dots">
+        <label for="slide_1"></label>
+        <label for="slide_2"></label>
+        <label for="slide_3"></label>
+        <label for="slide_4"></label>
+      </div>
+    </div>
+  </body>
 </html>
