@@ -102,62 +102,44 @@ body {
   background: #00a8e8;
 }
 
-#controls {
-  margin: -180px 0 0 0;
-  width: 100%;
-  height: 50px;
-  z-index: 3;
-}
-
-#controls label {
-  transition: opacity 0.2s ease-out;
-  display: none;
-  width: 50px;
-  height: 50px;
-  opacity: 0.4;
-}
-
-#controls label:hover {
-  opacity: 1;
-}
-
-#slide_1:checked ~ #controls label:nth-child(2),
-#slide_2:checked ~ #controls label:nth-child(3),
-#slide_3:checked ~ #controls label:nth-child(4),
-#slide_4:checked ~ #controls label:nth-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
-  float: right;
-  margin: 0 -50px 0 0;
-  display: block;
-}
-
-#slide_1:checked ~ #controls label:nth-last-child(2),
-#slide_2:checked ~ #controls label:nth-last-child(3),
-#slide_3:checked ~ #controls label:nth-last-child(4),
-#slide_4:checked ~ #controls label:nth-last-child(1) {
-  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
-  float: left;
-  margin: 0 0 0 -50px;
-  display: block;
-}
-
 #dots {
   margin-top: -6em;
+  margin-right: 25px;
   text-align: right;
+}
+
+.pointer {
+  cursor: pointer;
+  height: 20px;
+  width: 20px;
 }
 
 #dots label {
   display: inline-block;
-  width: 10px;
-  height: 10px;
   border-radius: 100%;
-  background: #ccc;
-  margin: 0 10px;
+  cursor: pointer;
+  height: 16px;
+  width: 16px;
+  margin: 5px;
+  background-color: rgb(119, 119, 255);
+  border: 4px solid rgb(119, 119, 255);
+}
+
+#dots label:hover {
+  border-color: white;
+  background-color: white;
 }
 
 #slide_1:checked ~ #dots label:nth-child(1),
 #slide_2:checked ~ #dots label:nth-child(2),
 #slide_3:checked ~ #dots label:nth-child(3),
 #slide_4:checked ~ #dots label:nth-child(4) {
-  background: #444;
+  background-color: transparent;
+}
+
+#slide_1:checked ~ #dots label:nth-child(1):hover,
+#slide_2:checked ~ #dots label:nth-child(2):hover,
+#slide_3:checked ~ #dots label:nth-child(3):hover,
+#slide_4:checked ~ #dots label:nth-child(4):hover {
+  border-color: white;
 }
