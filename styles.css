@@ -1,15 +1,16 @@
 body {
-  background-color: aqua;
+  background-color: darkgray;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
   min-height: 720px;
+  margin: 0;
 }
 
 #slider-container {
   height: 720px;
-  width: 90%;
+  width: 100%;
   text-align: center;
   min-width: 500px;
   max-width: 1024px;
@@ -36,15 +37,35 @@ body {
 }
 
 .slide-image {
-  height: 90%;
+  height: 81%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 
+.image-1 {
+  background-image: url("./assets/meme_1.png");
+}
+
+.image-2 {
+  background-image: url("./assets/meme_2.png");
+}
+
+.image-3 {
+  background-image: url("./assets/meme_3.png");
+}
+
+.image-4 {
+  background-image: url("./assets/meme_4.png");
+}
+
 .slide-text {
+  margin-left: 25px;
   width: 75%;
   text-align: left;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
 }
 
 #content-wrapper {
@@ -86,26 +107,18 @@ body {
   color: #fff;
 }
 
-#slides-memes .slide_1 {
-  background: #00171f;
-}
-
-#slides-memes .slide_2 {
-  background: #003459;
-}
-
-#slides-memes .slide_3 {
-  background: #007ea7;
-}
-
+#slides-memes .slide_1,
+#slides-memes .slide_2,
+#slides-memes .slide_3,
 #slides-memes .slide_4 {
-  background: #00a8e8;
+  background: black;
 }
 
 #dots {
-  margin-top: -6em;
+  margin-top: -5em;
   margin-right: 25px;
   text-align: right;
+  user-select: none;
 }
 
 .pointer {
